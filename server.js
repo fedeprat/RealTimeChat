@@ -15,7 +15,6 @@ const app = express();
 const server = http.createServer(app);
 // now I use it with socketio
 const io = socketio(server);
-app.use('/js/io/socket.js', express.static('./node_modules/socket.io/socket.io.js'))
 
 //set static folder
 app.use(express.static(path.join(__dirname, "public")));
